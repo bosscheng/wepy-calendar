@@ -2,14 +2,7 @@
 ---
 一款微信小程序的日历组件 支持左右翻页,picker.
 
-## Screenshots
-
-![日期选择器](http://or9d9eqg0.bkt.clouddn.com/calendar.gif)
-
-![日期选择器](http://or9d9eqg0.bkt.clouddn.com/calendar2)
-
-![日期选择器](http://or9d9eqg0.bkt.clouddn.com/calendar3.png)
-
+新增 开始时间 和 结束时间。
 
 ## Usage
 ### 首先记得把asset/icons下的2个小图标放到自己的资源文件里哦
@@ -89,6 +82,18 @@ import calendar from '../components/calendar
           <td>rgb rgba等(css里的颜色值都可用)</td>
           <td>black</td>
           <td>日历主色</td>
+        </tr>
+        <tr>
+          <td>start</td>
+          <td>String(YYYY-MM-DD)</td>
+          <td>moment().format('YYYY-MM-DD')</td>
+          <td>开始时间</td>
+        </tr>
+        <tr>
+          <td>end</td>
+          <td>String(YYYY-MM-DD)</td>
+          <td>moment().format('YYYY-MM-DD')</td>
+          <td>结束时间</td>
         </tr>
     </tbody>
 </table>

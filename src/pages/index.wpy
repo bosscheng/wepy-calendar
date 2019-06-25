@@ -1,4 +1,4 @@
-<style lang="scss" scoped>
+<style lang="less" scoped>
 .wrapper {
   position: relative;
   width: 100vw;
@@ -26,7 +26,7 @@
 
 <template>
   <view class="flex-center wrapper">
-    <calendar :visible.sync="calendarVisible"  :value.sync="time" @hanleConfirm.user="hanleConfirm" color="#05c8d3"></calendar>
+    <calendar :visible.sync="calendarVisible" :value.sync="time" :start.sync="startTime" :end.sync="endTime" @hanleConfirm.user="hanleConfirm" color="#05c8d3"></calendar>
     <view class="btn flex-center" @tap="showcalendar">
       打开日历图
     </view>
@@ -46,7 +46,9 @@ export default class Index extends wepy.page {
   mixins = []
   data = {
     calendarVisible: false,
-    time: '2018-04-11'
+    time: '2019-04-11',
+    startTime:'2019-01-01',
+    endTime:'2019-12-21'
   }
   computed = {
 
